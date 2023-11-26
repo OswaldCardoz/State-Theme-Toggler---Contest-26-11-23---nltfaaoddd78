@@ -7,7 +7,7 @@ export default function App() {
         setTheme((prevTheme)=>(prevTheme === "light" ? "dark" :"light"));
     };
     return (
-        <div className={`App ${theme}`}>
+        <div className="App" id={`${theme}`}>
             <h1>Newton School</h1>
             <div>
                 <form>
@@ -21,7 +21,7 @@ export default function App() {
             <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
             <input type="checkbox" id="switch" onChange={toggleTheme}/>
             <label for="switch" className="label">
-                Toggle
+                Toggle 
             </label>
         </div>
     );
